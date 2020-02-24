@@ -15,9 +15,7 @@ body {
 }
 
 .CodeMirror {
-  // border: 1px solid white;
   height: calc(100% - 35px);
-  // height: 100%;
 }
 
 .cm-variable, .cm-variable-2, .cm-variable-3 {
@@ -25,7 +23,7 @@ body {
 }
 
 .js-icon {
-  background-image: url('./assets/js-icon.svg');
+  background-image: url('assets/js-icon.svg');
   width: 16px;
   height: 16px;
   display: flex;

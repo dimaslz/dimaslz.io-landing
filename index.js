@@ -1,8 +1,6 @@
 import CodeMirror from 'codemirror';
 import 'codemirror/mode/javascript/javascript';
 
-import main from './main';
-
 const json = `{
   name: "Dimas López Zurita",
   email: "me@dimaslz.io",
@@ -34,5 +32,3 @@ CodeMirror(document.body, {
   lineNumbers: true,
   readOnly: true,
 });
-
-main();
