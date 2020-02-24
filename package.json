@@ -1,0 +1,16 @@
+{
+  "name": "landing.dimaslz.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Dimas López <me@dimaslz.io>",
+  "keywords": ["javascript", "developer", "vue", "react", "angular", "software", "nodejs", "nest", "express"],
+  "description": "My simple and small landing about me.",
+  "license": "MIT",
+  "dependencies": {
+    "codemirror": "^5.52.0",
+    "sass": "^1.25.0"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}

@@ -1,0 +1,91 @@
+@import './node_modules/codemirror/lib/codemirror';
+@import './node_modules/codemirror/theme/material.css';
+@import './node_modules/codemirror/theme/material-darker.css';
+@import './node_modules/codemirror/theme/material-ocean.css';
+@import './node_modules/codemirror/theme/material-palenight.css';
+
+body {
+  background-color: #263238;
+  font-size: 14px;
+  font-family: roboto,sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: initial;
+  -webkit-font-smoothing: antialiased;
+}
+
+.CodeMirror {
+  // border: 1px solid white;
+  height: calc(100% - 35px);
+  // height: 100%;
+}
+
+.cm-variable, .cm-variable-2, .cm-variable-3 {
+  color: rgb(128, 203, 196) !important;
+}
+
+.js-icon {
+  background-image: url('./assets/js-icon.svg');
+  width: 16px;
+  height: 16px;
+  display: flex;
+}
+
+.Tabs {
+  background-color: #334148;
+  &__Tab {
+    .Tab {
+      &__title {
+        width: 120px;
+        background-color: #263238;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 35px;
+        padding-left: 10px;
+        cursor: pointer;
+
+        .name {
+          margin-left: 5px;
+          display: flex;
+          font-weight: 400;
+          font-size: 12px;
+        }
+      }
+
+    }
+  }
+}
+
+.Statusbar {
+  height: 22px;
+  border-top: 1px solid #334148;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 10px;
+  color: white;
+  font-size: 12px;
+  line-height: 22px;
+  z-index: 1;
+
+  ul {
+    display: flex;
+    list-style: none;
+    li {
+      margin: 0 5px;
+      a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
