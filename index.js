@@ -1,7 +1,9 @@
 import CodeMirror from 'codemirror';
 import 'codemirror/mode/javascript/javascript';
 
-const json = `{
+const me = `import Developer from 'fullstack-developer';
+
+const me = new Developer({
   name: "Dimas López Zurita",
   email: "me@dimaslz.io",
   keywords: [
@@ -9,7 +11,8 @@ const json = `{
     "vue",
     "react",
     "angular",
-    "nodejs+express, nest",
+    "nodejs+express",
+    "nest",
     "software",
     "android",
     "ios",
@@ -19,14 +22,23 @@ const json = `{
     github: "https://github.com/dimaslz",
     twitter: "https://twitter.com/dimaslz"
   },
-  former_jobs: ["Trovit", "BeRepublic", "FocusOnEmotions", "Zyncro", "Instaply", "Ubeeqo/Europcar Mobility Group"],
-  localtion: "Barcelona, Spain",
+  formerJobs: ["Trovit", "BeRepublic", "FocusOnEmotions", "Zyncro", "Instaply", "Ubeeqo/Europcar Mobility Group"],
+  location: "Barcelona, Spain",
   status: "Working in myself",
-  interests: "Entrepreneurship, business, webapp, javascript, android, ios, ..."
-}`;
+  interests: "Entrepreneurship, business, web development, mobile, backend, devops, product, management, ...",
+});
 
-CodeMirror(document.body, {
-  value: json,
+me.motivation(); // Work in products with nice objectives
+me.workingOn(); // Personal projects
+me.isProactive(); // true
+me.hasBackendSkills(); // true
+me.hasFrontendSkills(); // true
+me.wantToWorkRemotly(); // true
+`;
+
+CodeMirror(document.body.querySelector('#code-me-js'), {
+  // value: json,
+  value: me,
   mode:  "javascript",
   theme: "material",
   lineNumbers: true,

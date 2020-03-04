@@ -4,6 +4,10 @@
 @import './node_modules/codemirror/theme/material-ocean.css';
 @import './node_modules/codemirror/theme/material-palenight.css';
 
+@import "./node_modules/tailwindcss/dist/base";
+@import "./node_modules/tailwindcss/dist/components";
+@import "./node_modules/tailwindcss/dist/utilities";
+
 body {
   background-color: #263238;
   font-size: 14px;
@@ -34,7 +38,7 @@ body {
   &__Tab {
     .Tab {
       &__title {
-        width: 120px;
+        width: 200px;
         background-color: #263238;
         color: white;
         display: flex;
